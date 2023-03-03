@@ -48,6 +48,9 @@ public class Main {
             System.out.println("Ученики по способностям равны.");
         }
     }
+    public static void PrintInfo(Object obj){
+        System.out.println(obj);
+    }
 
         public static void main(String[] args) {
         Gryffindor harryPotter = new Gryffindor("Harry Potter", 65, 27, 54, 35, 43);
@@ -64,7 +67,7 @@ public class Main {
         Slytherin gregoryGoyle = new Slytherin("Gregory Goyle", 65, 22, 43, 16, 64, 35, 34);
         BestSlytherin(grahamMontague, dracoMalfoy);
         BestHogwarts(harryPotter,dracoMalfoy);
-        System.out.println(marcusBelby);
+        PrintInfo(cedricDiggory);
     }
 
 
