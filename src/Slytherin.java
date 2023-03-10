@@ -1,5 +1,5 @@
 public class Slytherin extends Hogwarts {
-    final int cunning, determination, ambition, resourcefulness, lustForPower;
+    private int cunning, determination, ambition, resourcefulness, lustForPower;
 
 
     public Slytherin(String studentName, int witchcraft, int transgress, int cunning, int determination, int ambition, int resourcefulness, int lustForPower) {
@@ -29,5 +29,43 @@ public class Slytherin extends Hogwarts {
 
     public int getLustForPower() {
         return lustForPower;
+    }
+
+    public void setCunning(int cunning) {
+        this.cunning = cunning;
+    }
+
+    public void setDetermination(int determination) {
+        this.determination = determination;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
+
+    public void setResourcefulness(int resourcefulness) {
+        this.resourcefulness = resourcefulness;
+    }
+
+    public void setLustForPower(int lustForPower) {
+        this.lustForPower = lustForPower;
+    }
+
+    public int SumSkillsSlytherin(){
+       return this.cunning+this.determination+this.ambition+ this.resourcefulness+this.lustForPower;
+    }
+
+
+    @Override
+    public String toString() {
+        return getStudentName() +
+                ", faculty Slytherin" +
+                ", witchcraft = " + getWitchcraft() +
+                ", transgress = " + getTransgress() +
+                ", cunning = " + cunning +
+                ", determination = " + determination +
+                ", ambition = " + ambition +
+                ", resourcefulness = " + resourcefulness +
+                ", lustForPower = " + lustForPower;
     }
 }
